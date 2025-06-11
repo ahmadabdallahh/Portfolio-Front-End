@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmad Abdallah - Frontend Developer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+      <svg id="sunIcon" viewBox="0 0 24 24">
+        <path
+          d="M12 2v2m0 16v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M2 12h2m16 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42M12 7a5 5 0 100 10 5 5 0 000-10z"
+        />
+      </svg>
+      <svg id="moonIcon" viewBox="0 0 24 24" style="display: none">
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+      </svg>
+    </button>
+
+    <!-- Navigation Dots -->
+    <nav class="nav">
+      <div class="nav-dot active" data-section="hero"></div>
+      <div class="nav-dot" data-section="about"></div>
+      <div class="nav-dot" data-section="skills"></div>
+      <div class="nav-dot" data-section="projects"></div>
+      <div class="nav-dot" data-section="contact"></div>
+    </nav>
+
+    <!-- Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Hero Section -->
+    <section class="section hero" id="hero">
+      <div class="container">
+        <h1 id="heroName">Ahmad Abdallah</h1>
+        <p class="subtitle">
+          <span class="typewriter" id="typewriter"></span>
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Passionate about crafting seamless and captivating user
+              experiences, I'm a dedicated frontend developer with a love for
+              clean code and pixel-perfect designs. I thrive on transforming
+              creative concepts into interactive and visually appealing
+              websites.
+            </p>
+            <p>
+              Currently studying Software specialization at WE El-Beheira for
+              Applied Technology, I continuously expand my knowledge in modern
+              web technologies and best practices to deliver exceptional digital
+              experiences.
+            </p>
+            <p>
+              Based in Itay Al Barud, Egypt, I'm always excited to take on new
+              challenges and collaborate on innovative projects that push the
+              boundaries of web development.
+            </p>
+          </div>
+          <div class="about-image">
+            <div class="about-placeholder">Professional Photo Placeholder</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>HTML</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="95"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>CSS</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>JavaScript</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>React JS</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Bootstrap</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Git</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>GitHub</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" data-width="85"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3 class="project-title">Food Lover Clone</h3>
+            <p class="project-description">
+              Developed a dynamic and responsive Food clone using React context.
+              Features include user authentication, interactive menu browsing,
+              and seamless ordering experience with modern UI/UX design.
+            </p>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/ahmadabdallahh/Food-Lover_web"
+                class="project-link"
+                >GitHub Repo</a
+              >
+              <a
+                href="https://ahmadabdallahh.github.io/Food-Lover_web/"
+                class="project-link"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Security Shop</h3>
+            <p class="project-description">
+              Professional security solutions platform for homes and businesses.
+              Features expert installation services for alarm systems with
+              comprehensive product catalog and consultation booking system.
+            </p>
+
+            <div class="project-links">
+              <a
+                href="https://github.com/ahmadabdallahh/Person_task_four"
+                class="project-link"
+                >GitHub Repo</a
+              >
+              <a
+                href="https://ahmadabdallahh.github.io/Person_task_four/"
+                class="project-link"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-description">
+              This responsive portfolio website showcasing modern web
+              development techniques with smooth animations, dark/light mode
+              toggle, and mobile-first design approach.
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link">GitHub Repo</a>
+              <a href="#" class="project-link">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <h4>Email</h4>
+                <p>ahmadabhossen@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div>
+                <h4>Phone</h4>
+                <p>+20 1006429525</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4>Location</h4>
+                <p>Itay Al Barud, Egypt</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">💼</div>
+              <div>
+                <h4>LinkedIn</h4>
+                <p>Connect with me professionally</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input type="text" class="form-input" placeholder=" " required />
+              <label class="form-label">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-input" placeholder=" " required />
+              <label class="form-label">Email Address</label>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-input" placeholder=" " />
+              <label class="form-label">Subject</label>
+            </div>
+            <div class="form-group">
+              <textarea class="form-input" placeholder=" " required></textarea>
+              <label class="form-label">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
